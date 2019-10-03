@@ -1,0 +1,6 @@
+node_modules/
+src/*.d.ts
+src/*.js
+# builds
+yarn-error.log
+yarn.lock
