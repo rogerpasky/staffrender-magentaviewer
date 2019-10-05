@@ -21,6 +21,12 @@ import {
   INoteSequence, NoteSequence, BaseVisualizer
 } from '@magenta/music';
 
+// WARNING: VisualizerConfig interface has not been exported from @magenta
+// package, so it has been needed to be re-declared here until exportation
+// gets accepted in master.
+//
+// import {VisualizerConfig} from '@magenta/music';
+
 /**
  * An interface for providing configurable properties to a Visualizer.
  * @param noteHeight The vertical height in pixels of a note.
@@ -97,6 +103,10 @@ export interface StaffSVGVisualizerConfig extends VisualizerConfig {
  * 
  * When connected to a player, the visualizer can also highlight 
  * the notes being currently played.
+ 
+ * You can find more info at:
+ * 
+ * https://github.com/rogerpasky/staffrender-magentaviewer
  */
 export class StaffSVGVisualizer extends BaseVisualizer {
   private render: sr.StaffSVGRender; // The actual render
