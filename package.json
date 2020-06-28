@@ -1,6 +1,6 @@
 {
   "name": "staffrender-magentaviewer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Magenta derived music score Visualizer using staffrender library.",
   "devDependencies": {
     "@magenta/music": "^1.11.3",

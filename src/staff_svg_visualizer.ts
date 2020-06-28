@@ -253,4 +253,8 @@ export class StaffSVGVisualizer extends BaseVisualizer {
         }) : []
     };
   }
+  
+  public clearActiveNotes() {
+    this.redraw();
+  }
 }
